@@ -1,6 +1,6 @@
 import { DeployFunction } from 'hardhat-deploy/types'
 
-import { deploy } from '../utils/deploy-helpers'
+import { deploy } from '../helpers/deploy-helpers'
 import { BigNumberish, BigNumber as BN } from 'ethers'
 import { HardhatRuntimeEnvironment } from 'hardhat/types'
 import { getTokens, getNetworkName} from '../config'
