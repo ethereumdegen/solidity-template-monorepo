@@ -52,12 +52,12 @@ const isCompiling = COMPILING === 'true'
 const skipContractSizer = SKIP_SIZER === 'true' && !isCompiling
 if (!isCompiling) {
   rrequire(path.resolve(__dirname, 'helpers', 'tasks'))
- // require('helpers/hre-extensions')
+  require('./helpers/hre-extensions')
 }
 
 const isTesting = TESTING === '1'
 if (isTesting) {
-//  require('helpers/chai-helpers')
+   require('./helpers/chai-helpers')
 }
 
 //
