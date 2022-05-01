@@ -183,6 +183,15 @@ export default <HardhatUserConfig>{
           },
         },
       },
+      {
+        version: '0.4.18',
+        settings: {
+          optimizer: {
+            enabled: !isTesting,
+            runs: 200,
+          },
+        },
+      },
     ],
   },
 
